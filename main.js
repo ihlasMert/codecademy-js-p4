@@ -1,3 +1,5 @@
+
+
 let view = document.getElementById("view-button");
 let close = document.getElementById("close-button");
 let codey = document.getElementById("codey");
@@ -11,6 +13,16 @@ let hide = function () {
   close.style.display = "none";
 };
 
-
 view.addEventListener("click", open);
 close.addEventListener("click", hide);
+
+view.innerHTML = "Hello, World!";
+function textChange() {
+   
+}
+
+function textReturn() {
+  view.innerHTML = "View";
+}
+view.addEventListener("click", textChange);
+close.addEventListener("click", textReturn);
