@@ -10,3 +10,7 @@ let hide = function () {
   codey.style.display = "none";
   close.style.display = "none";
 };
+
+
+view.addEventListener("click", open);
+close.addEventListener("click", hide);
